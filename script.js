@@ -7,7 +7,7 @@ function russian_roulette_load(){
         rounds[i] = "charged"
     }
     rounds[Math.floor(Math.random()*6)] = "charged"
-
+    console.log(rounds)
     return rounds
 }
 
@@ -20,7 +20,7 @@ function russian_roulette_play(rounds){
 }
 
 launch_button.addEventListener("click", function(){
-    russian_roulette_play(russian_roulette_load())
+   russian_roulette_play(russian_roulette_load())
  }
 )
 
