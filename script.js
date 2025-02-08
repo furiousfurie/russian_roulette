@@ -1,10 +1,11 @@
 const launch_button = document.getElementById("start");
+const insert_button = document.getElementById("insert")
 
 function russian_roulette_load(){
     var rounds = []
 
     for(i = 0;i < 6;i++ ){
-        rounds[i] = "charged"
+        rounds[i] = "blank"
     }
     rounds[Math.floor(Math.random()*6)] = "charged"
     console.log(rounds)
